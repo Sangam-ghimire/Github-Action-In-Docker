@@ -12,3 +12,5 @@ services:
     restart: unless-stopped
     volumes:
       - runner-data:/actions-runner
+volumes:
+  runner-data:
