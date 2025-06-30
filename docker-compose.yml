@@ -6,9 +6,9 @@ services:
       context: .
     container_name: github-runner
     environment:
-      REPO_URL_FE: ${REPO_URL}
-      RUNNER_NAME_FE: ${RUNNER_NAME}
-      GITHUB_RUNNER_TOKEN_FE: ${GITHUB_RUNNER_TOKEN}
+      REPO_URL: ${REPO_URL}
+      RUNNER_NAME: ${RUNNER_NAME}
+      GITHUB_RUNNER_TOKEN: ${GITHUB_RUNNER_TOKEN}
     restart: unless-stopped
     volumes:
       - runner-data:/actions-runner
